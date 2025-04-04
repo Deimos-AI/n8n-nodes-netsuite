@@ -1,13 +1,13 @@
 import { IExecuteFunctions, INodeExecutionData, JsonObject } from 'n8n-workflow';
 
 export type INetSuiteCredentials = {
-	hostname: string;
 	accountId: string;
 	consumerKey: string;
-	consumerSecret: string;
 	tokenKey: string;
+	consumerSecret: string;
 	tokenSecret: string;
 	netsuiteQueryLimit?: number;
+	hostname: string;
 };
 
 export type INetSuiteOperationOptions = {
